@@ -25,6 +25,12 @@ change to that directory. make sure 'bht' is in your path, or call it with full 
 ```
 $ cd /path/to/test/data
 $ bht /dev/sda /dev/sdb /dev/sdc /dev/sdd
+
+# or
+
+# If all of your drives are /dev/da# and /dev/ada#
+
+$ ~/bht /dev/*da[0-9]
 ```
 you will be prompted to confirm the test run, as it will destroy any data on the hard drives. once you confirm, badblocks will be launched in the background for each hard drive.
 
